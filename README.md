@@ -1,0 +1,1 @@
+Bluetooth 230AC dimmer switch with nRF51822 chip and with touch wheel as encoder and button..
