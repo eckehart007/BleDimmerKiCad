@@ -1,4 +1,4 @@
-update=24/07/2016 18:35:50
+update=24/07/2016 22:35:26
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=library/contrib_symbols_dl1eic/Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LibName31=library/nordicsemi
+LibName32=C:/Elektroonika/EgertKicad_lib/Egert
+LibName33=library/Oscillators
