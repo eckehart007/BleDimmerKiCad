@@ -1,4 +1,4 @@
-update=24/07/2016 17:53:34
+update=24/07/2016 18:35:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../kicad-library/library/symbols;../../kicad-library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=library/contrib_symbols_dl1eic/Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LibName31=library/nordicsemi
