@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Elektroonika\BleDimmerKiCad\BleTouchDimmer\BleTouchDimmer.sch)
-    (date "24/07/2016 22:43:10")
+    (date "25/07/2016 18:05:32")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -26,6 +26,10 @@
       (tstamp 579527B0))
     (comp (ref Y2)
       (value Crystal)
+      (footprint EgertKiCad_lib:Crystal_ECX-31B)
+      (datasheet http://www.mouser.com/ds/2/122/ecx-31b-15952.pdf)
+      (fields
+        (field (name Ordering) http://www.mouser.ee/ProductDetail/ECS/ECS-327-125-34B-TR/?qs=sGAEpiMZZMvzziJrs9%252bUWUMjcDbm9QqG))
       (libsource (lib device) (part Crystal))
       (sheetpath (names /) (tstamps /))
       (tstamp 57952961))
