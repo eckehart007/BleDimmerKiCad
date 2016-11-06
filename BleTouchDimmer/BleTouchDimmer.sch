@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -597,4 +597,14 @@ F 3 "" H 6900 5250 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6900 5150 6900 5250
+Wire Wire Line
+	5500 4550 5500 5250
+Text Label 5500 5250 1    60   ~ 0
+ZC_DETECT
+$Sheet
+S 5700 5750 900  550 
+U 581F3B6C
+F0 "ZC_DETECT" 60
+F1 "ZC_DETECT.sch" 60
+$EndSheet
 $EndSCHEMATC
