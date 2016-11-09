@@ -129,7 +129,7 @@ U 1 1 58212C35
 P 4850 3150
 F 0 "U3" H 4640 3340 50  0000 L CNN
 F 1 "MOC3021S" H 4850 3350 50  0000 L CNN
-F 2 "DIP-6" H 4650 2950 50  0001 L CIN
+F 2 "EgertKiCad_lib:MOC3021S" H 4650 2950 50  0001 L CIN
 F 3 "http://www.mouser.com/ds/2/239/MOC302-201763.pdf" H 4825 3150 50  0001 L CNN
 F 4 "http://www.mouser.ee/ProductDetail/Lite-On/MOC3021S/?qs=sGAEpiMZZMteimceiIVCB9OIsGueWlCx1WN9Gn7xadE%3d" H 4850 3150 60  0001 C CNN "Source"
 	1    4850 3150
@@ -150,6 +150,4 @@ Text HLabel 3500 3500 0    60   Input ~ 0
 TRIAC_CONTROL
 Wire Wire Line
 	3500 3500 3800 3500
-Text Notes 5250 3200 0    60   ~ 0
-TODO Change footprint
 $EndSCHEMATC
