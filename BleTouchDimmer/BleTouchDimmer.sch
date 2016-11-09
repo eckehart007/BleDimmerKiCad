@@ -613,4 +613,16 @@ F4 "TRIAC1_L_OUT" I R 3950 5900 60
 F5 "TRIAC2_CONTROL" I L 2700 5600 60 
 F6 "TRIAC2_L_OUT" I R 3950 6050 60 
 $EndSheet
+$Comp
+L CONN_01X04 P3
+U 1 1 5823D05F
+P 1950 4100
+F 0 "P3" H 1950 4350 50  0000 C CNN
+F 1 "POWER" V 2050 4100 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 1950 4100 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_282837_G3-625767.pdf" H 1950 4100 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMvZTcaMAxB2AJ%2f79sE4hFAYNPaLlOiyu2A%3d" H 1950 4100 60  0001 C CNN "Ordering"
+	1    1950 4100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
