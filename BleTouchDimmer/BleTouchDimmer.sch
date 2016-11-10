@@ -635,4 +635,8 @@ Text Notes 1000 2500 0    60   Italic 12
 http://www.promelec.ru/pdf/lnk501.pdf
 Text Notes 1100 2050 0    60   Italic 12
 http://www.mouser.ee/Semiconductors/Power-Management-ICs/AC-DC-Converters/_/N-64puj/?Ns=Pricing|0
+Text Notes 3100 1200 0    60   ~ 0
+http://www.mouser.com/ds/2/328/linkswitch-4_family_datasheet-537370.pdf
+Text Notes 3200 1400 0    60   ~ 0
+http://www.mouser.ee/ProductDetail/Power-Integrations/LNK4002S-TL/?qs=sGAEpiMZZMvzv9EAOJZmO0dg70J8dH5iUaCijAFdjy8%3d
 $EndSCHEMATC
