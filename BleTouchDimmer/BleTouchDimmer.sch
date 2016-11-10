@@ -625,4 +625,14 @@ F 4 "http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMv
 	1    1950 4100
 	-1   0    0    -1  
 $EndComp
+Text Notes 1100 1800 0    60   Italic 12
+TODO\nPOWERSUPPLY\nPROTECTION\nENCODER/TOUCHWHEEL
+Text Notes 1050 2200 0    60   Italic 12
+http://electronics.stackexchange.com/questions/101818/surface-mount-transformerless-230v-to-3-3v-on-a-small-board
+Text Notes 1050 2350 0    60   Italic 12
+http://electronics.stackexchange.com/questions/67295/converting-universal-ac-to-3-3v-dc-0-1a
+Text Notes 1000 2500 0    60   Italic 12
+http://www.promelec.ru/pdf/lnk501.pdf
+Text Notes 1100 2050 0    60   Italic 12
+http://www.mouser.ee/Semiconductors/Power-Management-ICs/AC-DC-Converters/_/N-64puj/?Ns=Pricing|0
 $EndSCHEMATC
