@@ -32,12 +32,63 @@ LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
 LIBS:Egert
 LIBS:Oscillators
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
 LIBS:BleTouchDimmer-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -625,18 +676,12 @@ F 4 "http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMv
 	1    1950 4100
 	-1   0    0    -1  
 $EndComp
-Text Notes 1100 1800 0    60   Italic 12
+Text Notes 800  950  0    60   Italic 12
 TODO\nPOWERSUPPLY\nPROTECTION\nENCODER/TOUCHWHEEL
-Text Notes 1050 2200 0    60   Italic 12
-http://electronics.stackexchange.com/questions/101818/surface-mount-transformerless-230v-to-3-3v-on-a-small-board
-Text Notes 1050 2350 0    60   Italic 12
-http://electronics.stackexchange.com/questions/67295/converting-universal-ac-to-3-3v-dc-0-1a
-Text Notes 1000 2500 0    60   Italic 12
-http://www.promelec.ru/pdf/lnk501.pdf
-Text Notes 1100 2050 0    60   Italic 12
-http://www.mouser.ee/Semiconductors/Power-Management-ICs/AC-DC-Converters/_/N-64puj/?Ns=Pricing|0
-Text Notes 3100 1200 0    60   ~ 0
-http://www.mouser.com/ds/2/328/linkswitch-4_family_datasheet-537370.pdf
-Text Notes 3200 1400 0    60   ~ 0
-http://www.mouser.ee/ProductDetail/Power-Integrations/LNK4002S-TL/?qs=sGAEpiMZZMvzv9EAOJZmO0dg70J8dH5iUaCijAFdjy8%3d
+$Sheet
+S 2650 1150 1150 850 
+U 582628CE
+F0 "POWER_SUPPLY" 60
+F1 "POWER_SUPPLY.sch" 60
+$EndSheet
 $EndSCHEMATC
