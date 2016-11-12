@@ -111,15 +111,27 @@ http://www.mouser.com/ds/2/328/linkswitch-4_family_datasheet-537370.pdf
 Text Notes 1950 1450 0    60   ~ 0
 http://www.mouser.ee/ProductDetail/Power-Integrations/LNK4002S-TL/?qs=sGAEpiMZZMvzv9EAOJZmO0dg70J8dH5iUaCijAFdjy8%3d
 $Comp
-L LNK4002S U?
+L LNK4002S U5
 U 1 1 58263DA0
 P 4950 3850
-F 0 "U?" H 5000 4500 60  0000 C CNN
+F 0 "U5" H 5000 4500 60  0000 C CNN
 F 1 "LNK4002S" H 5150 4600 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4950 3850 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/328/linkswitch-4_family_datasheet-537370.pdf" H 4950 3850 60  0001 C CNN
 F 4 "http://www.mouser.ee/ProductDetail/Power-Integrations/LNK4002S-TL/?qs=%2fha2pyFadugj786Y9003uJ7%2fSQQ3cPMjIcGYMLe7JKg%3d" H 4950 3850 60  0001 C CNN "Ordering"
 	1    4950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode_Bridge D5
+U 1 1 5826D5CE
+P 2750 3600
+F 0 "D5" H 2500 3900 50  0000 C CNN
+F 1 "Diode_Bridge" H 3100 3250 50  0000 C CNN
+F 2 "EgertKiCad_lib:SOIC-4" H 2750 3600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/MB6S-1011197.pdf" H 2750 3600 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Fairchild-Semiconductor/MB6S/?qs=sGAEpiMZZMtQ8nqTKtFS%2fLDhWhDI65nsM5pfIld1Hhg%3d" H 2750 3600 60  0001 C CNN "Ordering"
+	1    2750 3600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
