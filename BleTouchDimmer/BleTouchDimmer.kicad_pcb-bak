@@ -2,7 +2,7 @@
 
   (general
     (links 69)
-    (no_connects 66)
+    (no_connects 69)
     (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
@@ -1103,7 +1103,7 @@
   )
 
   (module LEDs:LED_0805 (layer F.Cu) (tedit 55BDE1C2) (tstamp 582363F7)
-    (at 0 0)
+    (at 190.754 68.58)
     (descr "LED 0805 smd package")
     (tags "LED 0805 SMD")
     (path /58212355/58237C20)
@@ -1147,7 +1147,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 553634F8) (tstamp 58236407)
-    (at 0 0)
+    (at 194.31 98.552)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /58212355/58237C0D)
@@ -1180,7 +1180,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5415CDEB) (tstamp 58236413)
-    (at 0 0)
+    (at 204.47 69.85)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58212355/58237C1A)
@@ -1209,7 +1209,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5415CDEB) (tstamp 5823641F)
-    (at 0 0)
+    (at 182.118 68.834)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58212355/58237C2F)
@@ -1238,7 +1238,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 5823642B)
-    (at 0 0)
+    (at 195.834 75.692)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58236111)
@@ -1267,7 +1267,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 58236437)
-    (at 0 0)
+    (at 176.53 79.502)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58235F81)
@@ -1296,7 +1296,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 58236443)
-    (at 0 0)
+    (at 170.942 87.122)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58237C51)
@@ -1325,7 +1325,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 5823644F)
-    (at 0 0)
+    (at 175.26 93.726)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58237C4B)
@@ -1354,7 +1354,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 5823645B)
-    (at 0 0)
+    (at 187.198 77.47)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58236155)
@@ -1382,7 +1382,7 @@
   )
 
   (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 58236467)
-    (at 0 0)
+    (at 185.42 98.298)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
     (path /58212355/58237C57)
@@ -1410,7 +1410,7 @@
   )
 
   (module EgertKiCad_lib:MOC3021S (layer F.Cu) (tedit 58235CCE) (tstamp 58236478)
-    (at 0 0)
+    (at 191.262 87.884)
     (path /58212355/58237C37)
     (fp_text reference U4 (at -2.5 1.925 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))

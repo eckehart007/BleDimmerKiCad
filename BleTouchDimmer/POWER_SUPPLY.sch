@@ -134,4 +134,20 @@ F 4 "http://www.mouser.ee/ProductDetail/Fairchild-Semiconductor/MB6S/?qs=sGAEpiM
 	1    2750 3600
 	1    0    0    -1  
 $EndComp
+Text Notes 1850 2600 0    60   ~ 0
+http://www.premiermag.com/pdf/PM_Power_Catalog_Abacus_07-09-15.pdf
+Text Notes 1900 2750 0    60   ~ 0
+http://www.premiermag.com/html/sales/sales.html
+$Comp
+L TEZ1.5-D-1 TR?
+U 1 1 582CA6AB
+P 6450 4450
+F 0 "TR?" H 6450 4700 50  0000 C CNN
+F 1 "TEZ1.5-D-1" H 6450 4200 50  0000 C CNN
+F 2 "TEZ-28x33" H 6450 4100 50  0000 C CIN
+F 3 "http://www.tme.eu/en/Document/0ee0099c912b0b008223c99a7304714f/TEZ-EN.pdf" H 6450 4450 50  0001 C CNN
+F 4 "http://www.tme.eu/en/details/tez1.5_d_6v/pcb-transformers/breve-tufvassons/tez15d2306v/" H 6450 4450 60  0001 C CNN "Ordering"
+	1    6450 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
