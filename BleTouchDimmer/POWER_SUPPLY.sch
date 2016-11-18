@@ -146,8 +146,6 @@ F 5 "16V, El" H 5800 3300 60  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 3100 6500 3100
-Wire Wire Line
 	5800 3100 5800 3150
 $Comp
 L GND #PWR030
@@ -211,10 +209,8 @@ F 4 "16V" H 6200 3300 60  0001 C CNN "Spec"
 	1    6200 3300
 	1    0    0    -1  
 $EndComp
-Connection ~ 5800 3100
 Wire Wire Line
 	6200 3150 6200 3100
-Connection ~ 6200 3100
 $Comp
 L GND #PWR032
 U 1 1 582F0FF8
@@ -343,4 +339,8 @@ Wire Wire Line
 	7300 3100 8250 3100
 Wire Wire Line
 	8250 3100 8250 3000
+Wire Wire Line
+	5400 3100 6500 3100
+Connection ~ 6200 3100
+Connection ~ 5800 3100
 $EndSCHEMATC
