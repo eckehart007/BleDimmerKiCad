@@ -667,13 +667,13 @@ $EndSheet
 $Comp
 L CONN_01X04 P3
 U 1 1 5823D05F
-P 1950 4100
-F 0 "P3" H 1950 4350 50  0000 C CNN
-F 1 "POWER" V 2050 4100 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 1950 4100 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_282837_G3-625767.pdf" H 1950 4100 50  0001 C CNN
-F 4 "http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMvZTcaMAxB2AJ%2f79sE4hFAYNPaLlOiyu2A%3d" H 1950 4100 60  0001 C CNN "Ordering"
-	1    1950 4100
+P 800 4150
+F 0 "P3" H 800 4400 50  0000 C CNN
+F 1 "POWER" V 900 4150 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 800 4150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_282837_G3-625767.pdf" H 800 4150 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMvZTcaMAxB2AJ%2f79sE4hFAYNPaLlOiyu2A%3d" H 800 4150 60  0001 C CNN "Ordering"
+	1    800  4150
 	-1   0    0    -1  
 $EndComp
 Text Notes 800  950  0    60   Italic 12
@@ -684,4 +684,29 @@ U 582628CE
 F0 "POWER_SUPPLY" 60
 F1 "POWER_SUPPLY.sch" 60
 $EndSheet
+$Comp
+L VR VR?
+U 1 1 582F67C7
+P 1800 4200
+F 0 "VR?" V 1860 4154 50  0000 C TNN
+F 1 "VR" V 1800 4200 50  0000 C CNN
+F 2 "Varistors:RV_Disc_D9_W4.4_P5" H 1800 4200 50  0001 C CNN
+F 3 "http://www.mouser.ee/ProductDetail/EPCOS-TDK/B72207S0271K101/?qs=sGAEpiMZZMv1TUPJeFpwbucm%252bzz%2f10ZzRDGwdayLxmY%3d" H 1800 4200 50  0001 C CNN
+F 4 "http://www.mouser.com/ds/2/400/SIOV_Leaded_AdvanceD-525613.pdf" V 1800 4200 60  0001 C CNN "Ordering"
+F 5 "275VAC,350DC" V 1800 4200 60  0001 C CNN "Spec"
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 4300 1000 4450
+Wire Wire Line
+	1000 4450 1800 4450
+Wire Wire Line
+	1800 3950 1000 3950
+Wire Wire Line
+	1000 3950 1000 4000
+Text Label 1000 3950 0    60   ~ 0
+L_IN
+Text Label 1000 4450 0    60   ~ 0
+N_IN
 $EndSCHEMATC
