@@ -1,4 +1,4 @@
-update=11/11/2016 19:33:58
+update=18/11/2016 21:46:20
 version=1
 last_client=kicad
 [pcbnew]
@@ -142,3 +142,11 @@ LibName110=library/Worldsemi
 LibName111=library/Xicor
 LibName112=library/xilinx
 LibName113=library/Zilog
+LibName114=library/contrib_symbols_dl1eic/Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LibName115=library/contrib_symbols_dl1eic/Symbols_EN60617_13Mar2013
+LibName116=library/contrib_symbols_dl1eic/Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LibName117=library/contrib_symbols_dl1eic/Symbols_ICs-Diskrete_RevD10
+LibName118=library/contrib_symbols_dl1eic/Symbols_ICs-Opto_RevB_16Sep2013
+LibName119=library/contrib_symbols_dl1eic/Symbols_Socket-DIN41612_RevA
+LibName120=library/contrib_symbols_dl1eic/Symbols_Transformer-Diskrete_RevA
+LibName121=library/contrib_symbols_dl1eic/SymbolsSimilarEN60617+oldDIN617-RevE8
