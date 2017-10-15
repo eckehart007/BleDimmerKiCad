@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
-LIBS:Egert
 LIBS:Oscillators
 LIBS:74xgxx
 LIBS:ac-dc
@@ -58,7 +60,6 @@ LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
 LIBS:motor_drivers
 LIBS:motors
 LIBS:msp430
@@ -92,7 +93,7 @@ LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:BleTouchDimmer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -124,7 +125,7 @@ U 1 1 579553C4
 P 3600 3100
 F 0 "C3" H 3625 3200 50  0000 L CNN
 F 1 "22pF" H 3625 3000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3638 2950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 3638 2950 50  0001 C CNN
 F 3 "" H 3600 3100 50  0000 C CNN
 	1    3600 3100
 	0    -1   -1   0   
@@ -135,7 +136,7 @@ U 1 1 57955410
 P 3600 2550
 F 0 "C4" H 3625 2650 50  0000 L CNN
 F 1 "22pF" H 3625 2450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3638 2400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 3638 2400 50  0001 C CNN
 F 3 "" H 3600 2550 50  0000 C CNN
 	1    3600 2550
 	0    -1   -1   0   
@@ -157,7 +158,7 @@ U 1 1 57964778
 P 3600 2100
 F 0 "C9" H 3625 2200 50  0000 L CNN
 F 1 "1u" H 3625 2000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3638 1950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 3638 1950 50  0001 C CNN
 F 3 "" H 3600 2100 50  0000 C CNN
 	1    3600 2100
 	0    1    1    0   
@@ -168,7 +169,7 @@ U 1 1 57965994
 P 5200 4650
 F 0 "C7" H 5225 4750 50  0000 L CNN
 F 1 "1u" H 5225 4550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5238 4500 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 5238 4500 50  0001 C CNN
 F 3 "" H 5200 4650 50  0000 C CNN
 	1    5200 4650
 	1    0    0    -1  
@@ -292,7 +293,7 @@ U 1 1 57962E8D
 P 8000 2700
 F 0 "R1" V 8080 2700 50  0000 C CNN
 F 1 "10k" V 8000 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7930 2700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 7930 2700 50  0001 C CNN
 F 3 "" H 8000 2700 50  0000 C CNN
 	1    8000 2700
 	-1   0    0    1   
@@ -393,7 +394,7 @@ U 1 1 581ED91F
 P 9000 4700
 F 0 "R3" V 9080 4700 50  0000 C CNN
 F 1 "10k" V 9000 4700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8930 4700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 8930 4700 50  0001 C CNN
 F 3 "" H 9000 4700 50  0000 C CNN
 	1    9000 4700
 	-1   0    0    1   
@@ -415,18 +416,18 @@ U 1 1 581F1BD4
 P 7100 3500
 F 0 "R4" V 7180 3500 50  0000 C CNN
 F 1 "100R" V 7100 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7030 3500 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 7030 3500 50  0001 C CNN
 F 3 "" H 7100 3500 50  0000 C CNN
 	1    7100 3500
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-BleTouchDimmer D1
 U 1 1 581F1C9A
 P 7100 3950
 F 0 "D1" H 7100 4050 50  0000 C CNN
 F 1 "LED" H 7100 3850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 7100 3950 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 7100 3950 50  0001 C CNN
 F 3 "" H 7100 3950 50  0000 C CNN
 	1    7100 3950
 	0    -1   -1   0   

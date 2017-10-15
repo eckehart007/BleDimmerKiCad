@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
-LIBS:Egert
 LIBS:Oscillators
 LIBS:74xgxx
 LIBS:ac-dc
@@ -58,7 +60,6 @@ LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
 LIBS:motor_drivers
 LIBS:motors
 LIBS:msp430
@@ -92,7 +93,7 @@ LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:BleTouchDimmer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -188,7 +189,7 @@ U 1 1 581F78D1
 P 4300 2550
 F 0 "R6" V 4380 2550 50  0000 C CNN
 F 1 "10k" V 4300 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4230 2550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 2550 50  0001 C CNN
 F 3 "" H 4300 2550 50  0000 C CNN
 	1    4300 2550
 	1    0    0    -1  
@@ -226,7 +227,7 @@ U 1 1 581F7FBB
 P 4050 3950
 F 0 "C2" H 4075 4050 50  0000 L CNN
 F 1 "100n" H 4075 3850 50  0000 L CNN
-F 2 "" H 4088 3800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 4088 3800 50  0001 C CNN
 F 3 "" H 4050 3950 50  0000 C CNN
 	1    4050 3950
 	1    0    0    -1  
@@ -239,7 +240,7 @@ U 1 1 581F80CB
 P 4050 2550
 F 0 "R5" V 4130 2550 50  0000 C CNN
 F 1 "10k" V 4050 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3980 2550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 3980 2550 50  0001 C CNN
 F 3 "" H 4050 2550 50  0000 C CNN
 	1    4050 2550
 	1    0    0    -1  
@@ -252,12 +253,14 @@ Wire Wire Line
 	4050 2300 4300 2300
 Connection ~ 4300 2300
 $Comp
-L LED D2
+L LED-RESCUE-BleTouchDimmer D2
 U 1 1 581F86E5
 P 4050 3100
+AR Path="/581F86E5" Ref="D2"  Part="1" 
+AR Path="/581F3B6C/581F86E5" Ref="D2"  Part="1" 
 F 0 "D2" H 4050 3200 50  0000 C CNN
 F 1 "LED" H 4050 3000 50  0000 C CNN
-F 2 "LEDs:LED_0805" H 4050 3100 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 4050 3100 50  0001 C CNN
 F 3 "" H 4050 3100 50  0000 C CNN
 	1    4050 3100
 	0    -1   -1   0   

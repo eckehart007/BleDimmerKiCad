@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
-LIBS:Egert
 LIBS:Oscillators
 LIBS:74xgxx
 LIBS:ac-dc
@@ -58,7 +60,6 @@ LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
 LIBS:motor_drivers
 LIBS:motors
 LIBS:msp430
@@ -92,7 +93,7 @@ LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:BleTouchDimmer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -112,7 +113,7 @@ U 1 1 582107CA
 P 5700 2900
 F 0 "R2" V 5780 2900 50  0000 C CNN
 F 1 "10k" V 5700 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5630 2900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5630 2900 50  0001 C CNN
 F 3 "" H 5700 2900 50  0000 C CNN
 	1    5700 2900
 	-1   0    0    1   
@@ -138,7 +139,7 @@ U 1 1 582107D9
 P 5700 3700
 F 0 "C1" H 5725 3800 50  0000 L CNN
 F 1 "1n" H 5725 3600 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5738 3550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 5738 3550 50  0001 C CNN
 F 3 "" H 5700 3700 50  0000 C CNN
 	1    5700 3700
 	-1   0    0    1   

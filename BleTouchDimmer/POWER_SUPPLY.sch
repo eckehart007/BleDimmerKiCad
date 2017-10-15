@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
-LIBS:Egert
 LIBS:Oscillators
 LIBS:74xgxx
 LIBS:ac-dc
@@ -58,7 +60,6 @@ LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
 LIBS:motor_drivers
 LIBS:motors
 LIBS:msp430
@@ -92,7 +93,7 @@ LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:BleTouchDimmer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -203,8 +204,8 @@ U 1 1 582F097B
 P 6200 3300
 F 0 "C6" H 6225 3400 50  0000 L CNN
 F 1 "10uF" H 6225 3200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6238 3150 50  0001 C CNN
-F 3 "http://www.mouser.ee/ProductDetail/AVX/0805YD106KAT2A/?qs=sGAEpiMZZMsh%252b1woXyUXjwSzqOcIa2sM%252bScaRtZGCJQ%3d" H 6200 3300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6238 3150 50  0001 C CNN
+F 3 "http://www.mouser.ee/ProductDetail/Murata-Electronics/GRM188R61C106KAALJ/?qs=sGAEpiMZZMvsSlwiRhF8qtKev7nvVKumj1MMuNSdQUg4sVWwn51AJA%3d%3d" H 6200 3300 50  0001 C CNN
 F 4 "16V" H 6200 3300 60  0001 C CNN "Spec"
 	1    6200 3300
 	1    0    0    -1  
@@ -254,9 +255,9 @@ U 1 1 582F1364
 P 7500 3300
 F 0 "C8" H 7525 3400 50  0000 L CNN
 F 1 "22uF" H 7525 3200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7538 3150 50  0001 C CNN
-F 3 "http://www.mouser.ee/ProductDetail/Murata-Electronics/GRM21BR60J226ME39L/?qs=sGAEpiMZZMvsSlwiRhF8qqzM%252b6GIxsFQhi2ce6N7jPo%3d" H 7500 3300 50  0001 C CNN
-F 4 "16V" H 7500 3300 60  0001 C CNN "Spec"
+F 2 "Capacitors_SMD:C_0603" H 7538 3150 50  0001 C CNN
+F 3 "http://www.mouser.ee/ProductDetail/AVX/06036D226MAT2A/?qs=sGAEpiMZZMvsSlwiRhF8qkyrPkkEgZV5z45bleISnqh6LLvis9%252b1ig%3d%3d" H 7500 3300 50  0001 C CNN
+F 4 "6V3" H 7500 3300 60  0001 C CNN "Spec"
 	1    7500 3300
 	1    0    0    -1  
 $EndComp
@@ -281,7 +282,7 @@ U 1 1 582F1593
 P 7950 3300
 F 0 "R21" V 8030 3300 50  0000 C CNN
 F 1 "100R" V 7950 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7880 3300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 7880 3300 50  0001 C CNN
 F 3 "" H 7950 3300 50  0000 C CNN
 	1    7950 3300
 	1    0    0    -1  
@@ -292,7 +293,7 @@ U 1 1 582F1613
 P 7950 3550
 F 0 "D6" H 7900 3675 50  0000 L CNN
 F 1 "Led_Small" H 7775 3450 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7950 3550 50  0001 C CNN
+F 2 "LEDs:LED_0603" V 7950 3550 50  0001 C CNN
 F 3 "" V 7950 3550 50  0000 C CNN
 	1    7950 3550
 	0    -1   -1   0   

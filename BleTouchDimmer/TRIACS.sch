@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
-LIBS:Egert
 LIBS:Oscillators
 LIBS:74xgxx
 LIBS:ac-dc
@@ -58,7 +60,6 @@ LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
 LIBS:motor_drivers
 LIBS:motors
 LIBS:msp430
@@ -92,7 +93,7 @@ LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:BleTouchDimmer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -137,18 +138,20 @@ U 1 1 5821253E
 P 4200 1750
 F 0 "R11" V 4280 1750 50  0000 C CNN
 F 1 "100R" V 4200 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4130 1750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4130 1750 50  0001 C CNN
 F 3 "" H 4200 1750 50  0000 C CNN
 	1    4200 1750
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3
+L LED-RESCUE-BleTouchDimmer D3
 U 1 1 58212571
 P 4200 2200
+AR Path="/58212571" Ref="D3"  Part="1" 
+AR Path="/58212355/58212571" Ref="D3"  Part="1" 
 F 0 "D3" H 4200 2300 50  0000 C CNN
 F 1 "LED" H 4200 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4200 2200 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 4200 2200 50  0001 C CNN
 F 3 "" H 4200 2200 50  0000 C CNN
 	1    4200 2200
 	0    -1   -1   0   
@@ -176,7 +179,7 @@ U 1 1 582126E2
 P 4500 1750
 F 0 "R12" V 4580 1750 50  0000 C CNN
 F 1 "220R" V 4500 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4430 1750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4430 1750 50  0001 C CNN
 F 3 "" H 4500 1750 50  0000 C CNN
 	1    4500 1750
 	1    0    0    -1  
@@ -306,18 +309,20 @@ U 1 1 58237C1A
 P 4200 4450
 F 0 "R13" V 4280 4450 50  0000 C CNN
 F 1 "100R" V 4200 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4130 4450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4130 4450 50  0001 C CNN
 F 3 "" H 4200 4450 50  0000 C CNN
 	1    4200 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4
+L LED-RESCUE-BleTouchDimmer D4
 U 1 1 58237C20
 P 4200 4900
+AR Path="/58237C20" Ref="D4"  Part="1" 
+AR Path="/58212355/58237C20" Ref="D4"  Part="1" 
 F 0 "D4" H 4200 5000 50  0000 C CNN
 F 1 "LED" H 4200 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4200 4900 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 4200 4900 50  0001 C CNN
 F 3 "" H 4200 4900 50  0000 C CNN
 	1    4200 4900
 	0    -1   -1   0   
@@ -345,7 +350,7 @@ U 1 1 58237C2F
 P 4500 4450
 F 0 "R14" V 4580 4450 50  0000 C CNN
 F 1 "220R" V 4500 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4430 4450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4430 4450 50  0001 C CNN
 F 3 "" H 4500 4450 50  0000 C CNN
 	1    4500 4450
 	1    0    0    -1  
