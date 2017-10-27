@@ -1,4 +1,4 @@
-update=09/04/2017 19:46:31
+update=27/10/2017 22:58:21
 version=1
 last_client=kicad
 [pcbnew]
@@ -153,3 +153,6 @@ LibName121=library/contrib_symbols_dl1eic/Symbols_ICs-Opto_RevB_16Sep2013
 LibName122=library/contrib_symbols_dl1eic/Symbols_Socket-DIN41612_RevA
 LibName123=library/contrib_symbols_dl1eic/Symbols_Transformer-Diskrete_RevA
 LibName124=library/contrib_symbols_dl1eic/SymbolsSimilarEN60617+oldDIN617-RevE8
+LibName125=Espressif
+LibName126=C:/Elektroonika/ESP32-kiCad-Footprints/ESP32-Footprints/ESP32-footprints-Shem-Lib
+LibName127=C:/Elektroonika/ESP32-kiCad-Footprints/ESP32-Footprints/espressif-xess

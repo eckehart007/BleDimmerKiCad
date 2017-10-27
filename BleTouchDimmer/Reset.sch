@@ -33,16 +33,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
 LIBS:nordicsemi
+LIBS:Egert
 LIBS:Oscillators
-LIBS:74xgxx
 LIBS:ac-dc
-LIBS:actel
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
 LIBS:bbd
 LIBS:brooktre
-LIBS:cmos_ieee
 LIBS:dc-dc
 LIBS:diode
 LIBS:elec-unifil
@@ -53,32 +51,24 @@ LIBS:graphic
 LIBS:hc11
 LIBS:ir
 LIBS:Lattice
-LIBS:logo
 LIBS:maxim
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
 LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
-LIBS:msp430
 LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:Power_Management
 LIBS:powerint
 LIBS:pspice
 LIBS:references
-LIBS:relays
 LIBS:rfcom
 LIBS:sensors
 LIBS:silabs
-LIBS:stm8
-LIBS:stm32
 LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:ttl_ieee
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -92,8 +82,11 @@ LIBS:Symbols_ICs-Opto_RevB_16Sep2013
 LIBS:Symbols_Socket-DIN41612_RevA
 LIBS:Symbols_Transformer-Diskrete_RevA
 LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:Espressif
+LIBS:ESP32-footprints-Shem-Lib
+LIBS:espressif-xess
 LIBS:BleTouchDimmer-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
