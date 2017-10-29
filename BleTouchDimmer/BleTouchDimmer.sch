@@ -1237,4 +1237,6 @@ Wire Wire Line
 	5600 5750 5950 5750
 Text Label 8000 5450 0    60   ~ 0
 BOOT
+Text Notes 750  3900 0    60   ~ 0
+https://octopart.com/search?category_ids=5224&q=BINDING%20POST&start=0
 $EndSCHEMATC
