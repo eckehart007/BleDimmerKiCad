@@ -1,9 +1,15 @@
-EESchema Schematic File Version 3
+EESchema Schematic File Version 2
 LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
 LIBS:linear
 LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -18,36 +24,78 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
+LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:Espressif
+LIBS:valves
+LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LIBS:nordicsemi
+LIBS:Egert
+LIBS:Oscillators
 LIBS:ac-dc
 LIBS:Altera
 LIBS:analog_devices
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
-LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
 LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:Symbols_EN60617_13Mar2013
+LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LIBS:Symbols_ICs-Diskrete_RevD10
+LIBS:Symbols_ICs-Opto_RevB_16Sep2013
+LIBS:Symbols_Socket-DIN41612_RevA
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:Espressif
+LIBS:ESP32-footprints-Shem-Lib
+LIBS:espressif-xess
+LIBS:Battery_Management
+LIBS:bosch
+LIBS:Connector
 LIBS:Diode
 LIBS:Display
 LIBS:driver_gate
 LIBS:DSP_Microchip_DSPIC33
-LIBS:elec-unifil
-LIBS:ESD_Protection
 LIBS:FPGA_Actel
-LIBS:ftdi
-LIBS:gennum
 LIBS:Graphic
-LIBS:hc11
 LIBS:infineon
 LIBS:intersil
-LIBS:ir
-LIBS:Lattice
 LIBS:LED
 LIBS:LEM
 LIBS:Logic_74xgxx
@@ -56,7 +104,6 @@ LIBS:Logic_CMOS_4000
 LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
 LIBS:Logic_TTL_IEEE
-LIBS:maxim
 LIBS:MCU_Microchip_PIC10
 LIBS:MCU_Microchip_PIC12
 LIBS:MCU_Microchip_PIC16
@@ -72,35 +119,18 @@ LIBS:MCU_Texas_MSP430
 LIBS:Mechanical
 LIBS:modules
 LIBS:Motor
-LIBS:motor_drivers
-LIBS:nordicsemi
 LIBS:nxp
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
 LIBS:Relay
-LIBS:rfcom
 LIBS:RFSolutions
 LIBS:Sensor_Current
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
 LIBS:Switch
 LIBS:Transformer
 LIBS:Transistor
 LIBS:triac_thyristor
 LIBS:Valve
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
 LIBS:zetex
-LIBS:Zilog
 LIBS:BleTouchDimmer-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -115,18 +145,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Diode_Bridge D5
-U 1 1 5826D5CE
-P 5000 3100
-F 0 "D5" H 4750 3400 50  0000 C CNN
-F 1 "Diode_Bridge" H 5350 2750 50  0000 C CNN
-F 2 "EgertKiCad_lib:SOIC-4" H 5000 3100 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/149/MB6S-1011197.pdf" H 5000 3100 50  0001 C CNN
-F 4 "http://www.mouser.ee/ProductDetail/Fairchild-Semiconductor/MB6S/?qs=sGAEpiMZZMtQ8nqTKtFS%2fLDhWhDI65nsM5pfIld1Hhg%3d" H 5000 3100 60  0001 C CNN "Ordering"
-	1    5000 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L TEZ1.5-D-1 TR3
 U 1 1 582CA6AB
 P 3900 3100
@@ -139,14 +157,14 @@ F 4 "http://www.tme.eu/en/details/tez1.5_d_6v/pcb-transformers/breve-tufvassons/
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 3500 5000 3500
+	5000 3500 4250 3500
 $Comp
 L CP C5
 U 1 1 582F005E
 P 5800 3300
 F 0 "C5" H 5825 3400 50  0000 L CNN
 F 1 "1000uF" H 5825 3200 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 5838 3150 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 5838 3150 50  0001 C CNN
 F 3 "http://www.mouser.ee/ProductDetail/Illinois-Capacitor-CDE/108CKS016MLN/?qs=sGAEpiMZZMvwFf0viD3Y3TMnxRwPJuf7lvJARCEx%252bmScUxoLDcx5FA%3d%3d" H 5800 3300 50  0001 C CNN
 F 4 "http://www.mouser.ee/ProductDetail/Illinois-Capacitor-CDE/108CKS016MLN/?qs=sGAEpiMZZMvwFf0viD3Y3TMnxRwPJuf7lvJARCEx%252bmScUxoLDcx5FA%3d%3d" H 5800 3300 60  0001 C CNN "Ordering"
 F 5 "16V, El" H 5800 3300 60  0001 C CNN "Spec"
@@ -156,10 +174,10 @@ $EndComp
 Wire Wire Line
 	5800 3100 5800 3150
 $Comp
-L GND #PWR030
+L GND #PWR32
 U 1 1 582F00CB
 P 5800 3550
-F 0 "#PWR030" H 5800 3300 50  0001 C CNN
+F 0 "#PWR32" H 5800 3300 50  0001 C CNN
 F 1 "GND" H 5800 3400 50  0000 C CNN
 F 2 "" H 5800 3550 50  0000 C CNN
 F 3 "" H 5800 3550 50  0000 C CNN
@@ -169,10 +187,10 @@ $EndComp
 Wire Wire Line
 	5800 3450 5800 3550
 $Comp
-L GND #PWR031
+L GND #PWR31
 U 1 1 582F0227
 P 4500 3150
-F 0 "#PWR031" H 4500 2900 50  0001 C CNN
+F 0 "#PWR31" H 4500 2900 50  0001 C CNN
 F 1 "GND" H 4500 3000 50  0000 C CNN
 F 2 "" H 4500 3150 50  0000 C CNN
 F 3 "" H 4500 3150 50  0000 C CNN
@@ -182,7 +200,7 @@ $EndComp
 Wire Wire Line
 	4500 3150 4500 3100
 Wire Wire Line
-	4500 3100 4600 3100
+	4500 3100 4700 3100
 Wire Wire Line
 	4100 3300 4250 3300
 Wire Wire Line
@@ -220,21 +238,10 @@ $EndComp
 Wire Wire Line
 	6200 3150 6200 3100
 $Comp
-L GND #PWR032
-U 1 1 582F0FF8
-P 4250 3500
-F 0 "#PWR032" H 4250 3250 50  0001 C CNN
-F 1 "GND" H 4250 3350 50  0000 C CNN
-F 2 "" H 4250 3500 50  0000 C CNN
-F 3 "" H 4250 3500 50  0000 C CNN
-	1    4250 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR033
+L GND #PWR33
 U 1 1 582F1053
 P 6200 3550
-F 0 "#PWR033" H 6200 3300 50  0001 C CNN
+F 0 "#PWR33" H 6200 3300 50  0001 C CNN
 F 1 "GND" H 6200 3400 50  0000 C CNN
 F 2 "" H 6200 3550 50  0000 C CNN
 F 3 "" H 6200 3550 50  0000 C CNN
@@ -244,10 +251,10 @@ $EndComp
 Wire Wire Line
 	6200 3450 6200 3550
 $Comp
-L GND #PWR034
+L GND #PWR34
 U 1 1 582F11B3
 P 6900 3550
-F 0 "#PWR034" H 6900 3300 50  0001 C CNN
+F 0 "#PWR34" H 6900 3300 50  0001 C CNN
 F 1 "GND" H 6900 3400 50  0000 C CNN
 F 2 "" H 6900 3550 50  0000 C CNN
 F 3 "" H 6900 3550 50  0000 C CNN
@@ -271,10 +278,10 @@ $EndComp
 Wire Wire Line
 	7500 3150 7500 3100
 $Comp
-L GND #PWR035
+L GND #PWR35
 U 1 1 582F13E6
 P 7500 3550
-F 0 "#PWR035" H 7500 3300 50  0001 C CNN
+F 0 "#PWR35" H 7500 3300 50  0001 C CNN
 F 1 "GND" H 7500 3400 50  0000 C CNN
 F 2 "" H 7500 3550 50  0000 C CNN
 F 3 "" H 7500 3550 50  0000 C CNN
@@ -307,10 +314,10 @@ F 3 "" V 7950 3550 50  0000 C CNN
 $EndComp
 Connection ~ 7500 3100
 $Comp
-L GND #PWR036
+L GND #PWR36
 U 1 1 582F16EB
 P 7950 3700
-F 0 "#PWR036" H 7950 3450 50  0001 C CNN
+F 0 "#PWR36" H 7950 3450 50  0001 C CNN
 F 1 "GND" H 7950 3550 50  0000 C CNN
 F 2 "" H 7950 3700 50  0000 C CNN
 F 3 "" H 7950 3700 50  0000 C CNN
@@ -320,10 +327,10 @@ $EndComp
 Wire Wire Line
 	7950 3650 7950 3700
 $Comp
-L +3.3V #PWR037
+L +3.3V #PWR37
 U 1 1 582F17FF
 P 8250 3000
-F 0 "#PWR037" H 8250 2850 50  0001 C CNN
+F 0 "#PWR37" H 8250 2850 50  0001 C CNN
 F 1 "+3.3V" H 8250 3140 50  0000 C CNN
 F 2 "" H 8250 3000 50  0000 C CNN
 F 3 "" H 8250 3000 50  0000 C CNN
@@ -348,7 +355,23 @@ Wire Wire Line
 Wire Wire Line
 	8250 3100 8250 3000
 Wire Wire Line
-	5400 3100 6500 3100
+	5300 3100 6500 3100
 Connection ~ 6200 3100
 Connection ~ 5800 3100
+$Comp
+L D_Bridge_+-AA D5
+U 1 1 59F6185D
+P 5000 3100
+F 0 "D5" H 5050 3375 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5050 3300 50  0000 L CNN
+F 2 "EgertKiCad_lib:SOIC-4" H 5000 3100 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/MB6S-1011197.pdf" H 5000 3100 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Fairchild-Semiconductor/MB6S/?qs=sGAEpiMZZMtQ8nqTKtFS%2fLDhWhDI65nsM5pfIld1Hhg%3d" H 5000 3100 60  0001 C CNN "Ordering"
+	1    5000 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3400 5000 3500
+Wire Wire Line
+	5000 2800 5000 2700
 $EndSCHEMATC

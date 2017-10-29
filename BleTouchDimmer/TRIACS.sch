@@ -1,9 +1,15 @@
-EESchema Schematic File Version 3
+EESchema Schematic File Version 2
 LIBS:BleTouchDimmer-rescue
+LIBS:cypress_touch
+LIBS:azoteq_touch
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
 LIBS:linear
 LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -18,36 +24,78 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
+LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:Espressif
+LIBS:valves
+LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LIBS:nordicsemi
+LIBS:Egert
+LIBS:Oscillators
 LIBS:ac-dc
 LIBS:Altera
 LIBS:analog_devices
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
-LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
 LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:Symbols_EN60617_13Mar2013
+LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LIBS:Symbols_ICs-Diskrete_RevD10
+LIBS:Symbols_ICs-Opto_RevB_16Sep2013
+LIBS:Symbols_Socket-DIN41612_RevA
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:Espressif
+LIBS:ESP32-footprints-Shem-Lib
+LIBS:espressif-xess
+LIBS:Battery_Management
+LIBS:bosch
+LIBS:Connector
 LIBS:Diode
 LIBS:Display
 LIBS:driver_gate
 LIBS:DSP_Microchip_DSPIC33
-LIBS:elec-unifil
-LIBS:ESD_Protection
 LIBS:FPGA_Actel
-LIBS:ftdi
-LIBS:gennum
 LIBS:Graphic
-LIBS:hc11
 LIBS:infineon
 LIBS:intersil
-LIBS:ir
-LIBS:Lattice
 LIBS:LED
 LIBS:LEM
 LIBS:Logic_74xgxx
@@ -56,7 +104,6 @@ LIBS:Logic_CMOS_4000
 LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
 LIBS:Logic_TTL_IEEE
-LIBS:maxim
 LIBS:MCU_Microchip_PIC10
 LIBS:MCU_Microchip_PIC12
 LIBS:MCU_Microchip_PIC16
@@ -72,35 +119,18 @@ LIBS:MCU_Texas_MSP430
 LIBS:Mechanical
 LIBS:modules
 LIBS:Motor
-LIBS:motor_drivers
-LIBS:nordicsemi
 LIBS:nxp
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
 LIBS:Relay
-LIBS:rfcom
 LIBS:RFSolutions
 LIBS:Sensor_Current
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
 LIBS:Switch
 LIBS:Transformer
 LIBS:Transistor
 LIBS:triac_thyristor
 LIBS:Valve
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
 LIBS:zetex
-LIBS:Zilog
 LIBS:BleTouchDimmer-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -127,10 +157,10 @@ F 4 "http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAE
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L GND #PWR28
 U 1 1 5821246B
 P 4200 3050
-F 0 "#PWR026" H 4200 2800 50  0001 C CNN
+F 0 "#PWR28" H 4200 2800 50  0001 C CNN
 F 1 "GND" H 4200 2900 50  0000 C CNN
 F 2 "" H 4200 3050 50  0000 C CNN
 F 3 "" H 4200 3050 50  0000 C CNN
@@ -168,10 +198,10 @@ Wire Wire Line
 Wire Wire Line
 	4200 2400 4200 2500
 $Comp
-L +3V3 #PWR027
+L +3V3 #PWR27
 U 1 1 582125D3
 P 4200 1500
-F 0 "#PWR027" H 4200 1350 50  0001 C CNN
+F 0 "#PWR27" H 4200 1350 50  0001 C CNN
 F 1 "+3V3" H 4200 1640 50  0000 C CNN
 F 2 "" H 4200 1500 50  0000 C CNN
 F 3 "" H 4200 1500 50  0000 C CNN
@@ -298,10 +328,10 @@ F 4 "http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAE
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L GND #PWR30
 U 1 1 58237C13
 P 4200 5750
-F 0 "#PWR028" H 4200 5500 50  0001 C CNN
+F 0 "#PWR30" H 4200 5500 50  0001 C CNN
 F 1 "GND" H 4200 5600 50  0000 C CNN
 F 2 "" H 4200 5750 50  0000 C CNN
 F 3 "" H 4200 5750 50  0000 C CNN
@@ -339,10 +369,10 @@ Wire Wire Line
 Wire Wire Line
 	4200 5100 4200 5200
 $Comp
-L +3V3 #PWR029
+L +3V3 #PWR29
 U 1 1 58237C28
 P 4200 4200
-F 0 "#PWR029" H 4200 4050 50  0001 C CNN
+F 0 "#PWR29" H 4200 4050 50  0001 C CNN
 F 1 "+3V3" H 4200 4340 50  0000 C CNN
 F 2 "" H 4200 4200 50  0000 C CNN
 F 3 "" H 4200 4200 50  0000 C CNN
