@@ -361,26 +361,26 @@ F 5 "275VAC,350DC" V 2200 4700 60  0001 C CNN "Spec"
 	1    2200 4700
 	1    0    0    -1  
 $EndComp
-Text Label 1250 4400 0    60   ~ 0
+Text Label 1300 4750 0    60   ~ 0
 L_IN
 Text Label 2600 5000 2    60   ~ 0
 N
 $Comp
 L RVAR R22
 U 1 1 582F5F6C
-P 1800 4400
-F 0 "R22" V 1880 4350 50  0000 C CNN
-F 1 "PTCC" V 1700 4450 50  0000 C CNN
-F 2 "Varistors:RV_Disc_D7_W5.5_P5" H 1800 4400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/ptccl265vseries-109202.pdf" H 1800 4400 50  0001 C CNN
-F 4 "http://www.mouser.ee/ProductDetail/Vishay/PTCCL05H630HBE/?qs=%2fha2pyFaduhe5MnjzSnUuqgECKBNFzw%252bCXjAzFqnpFOVPihHyum5eg%3d%3d" V 1800 4400 60  0001 C CNN "Ordering"
-F 5 "http://www.tme.eu/ee/details/ptccl05h630hbe/ptc-termistorid/vishay/" V 1800 4400 60  0001 C CNN "Ordering1"
-	1    1800 4400
+P 1750 4750
+F 0 "R22" V 1830 4700 50  0000 C CNN
+F 1 "PTCC" V 1650 4800 50  0000 C CNN
+F 2 "Varistors:RV_Disc_D7_W5.5_P5" H 1750 4750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/ptccl265vseries-109202.pdf" H 1750 4750 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Vishay/PTCCL05H630HBE/?qs=%2fha2pyFaduhe5MnjzSnUuqgECKBNFzw%252bCXjAzFqnpFOVPihHyum5eg%3d%3d" V 1750 4750 60  0001 C CNN "Ordering"
+F 5 "http://www.tme.eu/ee/details/ptccl05h630hbe/ptc-termistorid/vishay/" V 1750 4750 60  0001 C CNN "Ordering1"
+	1    1750 4750
 	0    1    1    0   
 $EndComp
-Text Label 1900 4650 2    60   ~ 0
+Text Label 1250 4650 0    60   ~ 0
 TR1_L_OUT
-Text Label 1900 4750 2    60   ~ 0
+Text Label 1250 4550 0    60   ~ 0
 TR2_L_OUT
 Text Label 2700 4400 2    60   ~ 0
 230_VAC_L
@@ -413,10 +413,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 5000 2750 5000
 Wire Wire Line
-	1250 4400 1250 4550
-Wire Wire Line
-	1250 4400 1550 4400
-Wire Wire Line
 	2050 4400 2750 4400
 Wire Wire Line
 	2200 4400 2200 4450
@@ -424,10 +420,6 @@ Connection ~ 2200 4400
 Wire Wire Line
 	2200 5000 2200 4950
 Connection ~ 2200 5000
-Wire Wire Line
-	1250 4650 1900 4650
-Wire Wire Line
-	1250 4750 1900 4750
 Wire Wire Line
 	3100 6700 2500 6700
 Wire Wire Line
@@ -1239,4 +1231,10 @@ Text Label 8000 5450 0    60   ~ 0
 BOOT
 Text Notes 750  3900 0    60   ~ 0
 https://octopart.com/search?category_ids=5224&q=BINDING%20POST&start=0
+Wire Wire Line
+	2050 4400 2050 4750
+Wire Wire Line
+	2050 4750 2000 4750
+Wire Wire Line
+	1500 4750 1250 4750
 $EndSCHEMATC
