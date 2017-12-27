@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Elektroonika/BleDimmerKiCad/BleTouchDimmer/BleTouchDimmer.sch</source>
+    <date>16/11/2017 21:24:48</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>BleTouchDimmer.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/ZC_DETECT/" tstamps="/581F3B6C/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ZC_DETECT.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/TRIACS/" tstamps="/58212355/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>TRIACS.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/POWER_SUPPLY/" tstamps="/582628CE/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>POWER_SUPPLY.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57965994</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581ED91F</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581F1BD4</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="BleTouchDimmer-rescue" part="LED-RESCUE-BleTouchDimmer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581F1C9A</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>POWER</value>
+      <footprint>Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol</footprint>
+      <datasheet>http://www.mouser.com/ds/2/418/NG_CD_282837_G3-625767.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/TE-Connectivity/282837-4/?qs=sGAEpiMZZMvZTcaMAxB2AJ%2f79sE4hFAYNPaLlOiyu2A%3d</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5823D05F</tstamp>
+    </comp>
+    <comp ref="VR1">
+      <value>VR</value>
+      <footprint>Varistors:RV_Disc_D9_W4.4_P5</footprint>
+      <datasheet>http://www.mouser.ee/ProductDetail/EPCOS-TDK/B72207S0271K101/?qs=sGAEpiMZZMv1TUPJeFpwbucm%252bzz%2f10ZzRDGwdayLxmY%3d</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.com/ds/2/400/SIOV_Leaded_AdvanceD-525613.pdf</field>
+        <field name="Spec">275VAC,350DC</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="VR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>582F67C7</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>PTCC</value>
+      <footprint>Varistors:RV_Disc_D7_W5.5_P5</footprint>
+      <datasheet>http://www.mouser.com/ds/2/427/ptccl265vseries-109202.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/Vishay/PTCCL05H630HBE/?qs=%2fha2pyFaduhe5MnjzSnUuqgECKBNFzw%252bCXjAzFqnpFOVPihHyum5eg%3d%3d</field>
+        <field name="Ordering1">http://www.tme.eu/ee/details/ptccl05h630hbe/ptc-termistorid/vishay/</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="RVAR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>582F5F6C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Source">https://www.mouser.ee/ProductDetail/Taiyo-Yuden/EMK107BC6106MA-T/?qs=sGAEpiMZZMsB9HsreUc%252biS0Zad3Px2ZbtTwX9H1ZZa4%3d</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F576FF</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x06</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5065_06x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F4AE73</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>ESP32-WROOM</value>
+      <footprint>esp_library:ESP32-WROOM</footprint>
+      <libsource lib="ESP32-footprints-Shem-Lib" part="ESP32-WROOM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F39093</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F4DFE7</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F4DFF6</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3SL-1022P</footprint>
+      <datasheet>http://www.mouser.com/ds/2/15/SKQG-180836.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/ALPS/SKQGAKE010/?qs=sGAEpiMZZMsgGjVA3toVBA1UHfTHbV9%252bZVm6oBay0Ts%3d</field>
+        <field name="Info">https://www.oomipood.ee/product/tss03-50/mikronupp-6-3-5-5mm-n-1-5mm-smd</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F4E000</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BC850</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="transistors" part="BC850"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5036A</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>BC850</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="transistors" part="BC850"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F50A88</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>2k2</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F50E18</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>2k2</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F50ED1</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>JTAG</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5075_07x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x07"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5B2A8</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5C8DE</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5CB3D</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5CE01</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F5CE77</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>PDTC123J</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.mouser.com/ds/2/302/PDTC123J_SER-841916.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAEpiMZZMshyDBzk1%2fWiyXIlDzPapKNlaTTvGSuxQw%3d</field>
+      </fields>
+      <libsource lib="transistors" part="DTC123J"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F61F2F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F61F3D</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>PDTC123J</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.mouser.com/ds/2/302/PDTC123J_SER-841916.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAEpiMZZMshyDBzk1%2fWiyXIlDzPapKNlaTTvGSuxQw%3d</field>
+      </fields>
+      <libsource lib="transistors" part="DTC123J"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F6368E</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F6369B</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5035_03x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F6613F</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x03</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5035_03x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F662F7</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>SLIDER1</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5055_05x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F67E93</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>SLIDER2</value>
+      <footprint>Connectors_Molex:Molex_SPOX-5267_22-03-5055_05x2.54mm_Straight</footprint>
+      <libsource lib="conn" part="Conn_01x05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F68192</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>39k</value>
+      <footprint>Resistors_SMD:R_1210</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F3BAB</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>39k</value>
+      <footprint>Resistors_SMD:R_1210</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F3C20</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>39k</value>
+      <footprint>Resistors_SMD:R_1210</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F3C46</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>39k</value>
+      <footprint>Resistors_SMD:R_1210</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F3CD4</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LTV-814</value>
+      <footprint>Opto-Devices:Optocoupler_SMD_LTV-817S</footprint>
+      <datasheet>http://www.mouser.com/ds/2/239/S_110_LTV-814%20824%20844%20(M,%20S,%20S-TA,%20S-TA1,%20S-TP)%20Se-337200.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/Lite-On/LTV-814S/?qs=sGAEpiMZZMteimceiIVCB2s%252bla0Gkx1bnFpk%2fM3MUrY%3d</field>
+      </fields>
+      <libsource lib="opto" part="LTV-814"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F7046</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F78D1</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F7FBB</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F80CB</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="BleTouchDimmer-rescue" part="LED-RESCUE-BleTouchDimmer"/>
+      <sheetpath names="/ZC_DETECT/" tstamps="/581F3B6C/"/>
+      <tstamp>581F86E5</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>PDTC123J</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.mouser.com/ds/2/302/PDTC123J_SER-841916.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAEpiMZZMshyDBzk1%2fWiyXIlDzPapKNlaTTvGSuxQw%3d</field>
+      </fields>
+      <libsource lib="transistors" part="DTC123J"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58212376</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>5821253E</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="BleTouchDimmer-rescue" part="LED-RESCUE-BleTouchDimmer"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58212571</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>582126E2</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MOC3021S</value>
+      <footprint>EgertKiCad_lib:MOC3021S</footprint>
+      <datasheet>http://www.mouser.com/ds/2/239/MOC302-201763.pdf</datasheet>
+      <fields>
+        <field name="Source">http://www.mouser.ee/ProductDetail/Lite-On/MOC3021S/?qs=sGAEpiMZZMteimceiIVCB9OIsGueWlCx1WN9Gn7xadE%3d</field>
+      </fields>
+      <libsource lib="opto" part="MOC3021M"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58212C35</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58235F81</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58236111</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58236155</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>PDTC123J</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.mouser.com/ds/2/302/PDTC123J_SER-841916.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/NXP-Semiconductors/PDTC123JT235/?qs=sGAEpiMZZMshyDBzk1%2fWiyXIlDzPapKNlaTTvGSuxQw%3d</field>
+      </fields>
+      <libsource lib="transistors" part="DTC123J"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C0D</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C1A</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="BleTouchDimmer-rescue" part="LED-RESCUE-BleTouchDimmer"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C20</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C2F</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>MOC3021S</value>
+      <footprint>EgertKiCad_lib:MOC3021S</footprint>
+      <datasheet>http://www.mouser.com/ds/2/239/MOC302-201763.pdf</datasheet>
+      <fields>
+        <field name="Source">http://www.mouser.ee/ProductDetail/Lite-On/MOC3021S/?qs=sGAEpiMZZMteimceiIVCB9OIsGueWlCx1WN9Gn7xadE%3d</field>
+      </fields>
+      <libsource lib="opto" part="MOC3021M"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C37</tstamp>
+    </comp>
+    <comp ref="TR2">
+      <value>TRIAC</value>
+      <footprint>TO_SOT_Packages_SMD:TO-252-2Lead</footprint>
+      <datasheet>http://www.mouser.com/ds/2/389/t405q-600-957131.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/STMicroelectronics/T405Q-600B-TR/?qs=sGAEpiMZZMuAO0%252bGuNbnQrRB9bF8XIozkWjnlcTSNE8%3d</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="TRIAC"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C45</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C4B</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C51</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>360R</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>58237C57</tstamp>
+    </comp>
+    <comp ref="TR1">
+      <value>TRIAC</value>
+      <footprint>TO_SOT_Packages_SMD:TO-252-2Lead</footprint>
+      <datasheet>http://www.mouser.com/ds/2/389/t405q-600-957131.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/STMicroelectronics/T405Q-600B-TR/?qs=sGAEpiMZZMuAO0%252bGuNbnQrRB9bF8XIozkWjnlcTSNE8%3d</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="TRIAC"/>
+      <sheetpath names="/TRIACS/" tstamps="/58212355/"/>
+      <tstamp>5823B540</tstamp>
+    </comp>
+    <comp ref="TR3">
+      <value>TEZ1.5-D-1</value>
+      <footprint>TEZ-28x33</footprint>
+      <datasheet>http://www.tme.eu/en/Document/0ee0099c912b0b008223c99a7304714f/TEZ-EN.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.tme.eu/en/details/tez1.5_d_6v/pcb-transformers/breve-tufvassons/tez15d2306v/</field>
+      </fields>
+      <libsource lib="Transformer" part="TEZ1.5-D-1"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582CA6AB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1000uF</value>
+      <footprint>Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <datasheet>http://www.mouser.ee/ProductDetail/Illinois-Capacitor-CDE/108CKS016MLN/?qs=sGAEpiMZZMvwFf0viD3Y3TMnxRwPJuf7lvJARCEx%252bmScUxoLDcx5FA%3d%3d</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/Illinois-Capacitor-CDE/108CKS016MLN/?qs=sGAEpiMZZMvwFf0viD3Y3TMnxRwPJuf7lvJARCEx%252bmScUxoLDcx5FA%3d%3d</field>
+        <field name="Spec">16V, El</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F005E</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LD1117S33TR</value>
+      <footprint>SOT-223</footprint>
+      <datasheet>http://www.mouser.com/ds/2/115/AZ1117C-271627.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/Diodes-Incorporated/AZ1117CH-33TRG1/?qs=sGAEpiMZZMvYvv22R2xfeH5Si6WlLh7Gfg8HwFZ6PMw%3d</field>
+      </fields>
+      <libsource lib="BleTouchDimmer-cache" part="LD1117S33TR"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F06A8</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>http://www.mouser.ee/ProductDetail/Murata-Electronics/GRM188R61C106KAALJ/?qs=sGAEpiMZZMvsSlwiRhF8qtKev7nvVKumj1MMuNSdQUg4sVWwn51AJA%3d%3d</datasheet>
+      <fields>
+        <field name="Spec">16V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F097B</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>http://www.mouser.ee/ProductDetail/AVX/06036D226MAT2A/?qs=sGAEpiMZZMvsSlwiRhF8qkyrPkkEgZV5z45bleISnqh6LLvis9%252b1ig%3d%3d</datasheet>
+      <fields>
+        <field name="Spec">6V3</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F1364</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F1593</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>Led_Small</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="BleTouchDimmer-cache" part="Led_Small"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>582F1613</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>D_Bridge_+-AA</value>
+      <footprint>EgertKiCad_lib:SOIC-4</footprint>
+      <datasheet>http://www.mouser.com/ds/2/149/MB6S-1011197.pdf</datasheet>
+      <fields>
+        <field name="Ordering">http://www.mouser.ee/ProductDetail/Fairchild-Semiconductor/MB6S/?qs=sGAEpiMZZMtQ8nqTKtFS%2fLDhWhDI65nsM5pfIld1Hhg%3d</field>
+      </fields>
+      <libsource lib="device" part="D_Bridge_+-AA"/>
+      <sheetpath names="/POWER_SUPPLY/" tstamps="/582628CE/"/>
+      <tstamp>59F6185D</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="transistors" part="BC817">
+      <aliases>
+        <alias>BC818</alias>
+        <alias>BC847</alias>
+        <alias>BC848</alias>
+        <alias>BC849</alias>
+        <alias>BC850</alias>
+        <alias>MMBT3904</alias>
+      </aliases>
+      <description>45V Vce, 0.8A Ic, NPN, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC817.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC817</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="CONN_01X04">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x07">
+      <description>Generic connector, single row, 01x07</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x07</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistors" part="DTC123J">
+      <description>Digital Transistor, 2k2/47k, SOT-23</description>
+      <footprints>
+        <fp>SOT?23*</fp>
+        <fp>SC-59*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">DTC123J</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Bridge_+-AA">
+      <description>Diode bridge (pins: 1=+, 2=-, 3=AC, 4=AC)</description>
+      <footprints>
+        <fp>D?Bridge*</fp>
+        <fp>D?Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_+-AA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP32-footprints-Shem-Lib" part="ESP32-WROOM">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-WROOM</field>
+        <field name="Footprint">ESP32-footprints-Lib:ESP32-WROOM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="SENSOR_VP" type="input"/>
+        <pin num="5" name="SENSOR_VN" type="input"/>
+        <pin num="6" name="IO34" type="BiDi"/>
+        <pin num="7" name="IO35" type="BiDi"/>
+        <pin num="8" name="IO32" type="BiDi"/>
+        <pin num="9" name="IO33" type="BiDi"/>
+        <pin num="10" name="IO25" type="BiDi"/>
+        <pin num="11" name="IO26" type="BiDi"/>
+        <pin num="12" name="IO27" type="BiDi"/>
+        <pin num="13" name="IO14" type="BiDi"/>
+        <pin num="14" name="IO12" type="BiDi"/>
+        <pin num="15" name="GND" type="power_in"/>
+        <pin num="16" name="IO13" type="BiDi"/>
+        <pin num="17" name="SD2" type="BiDi"/>
+        <pin num="18" name="SD3" type="BiDi"/>
+        <pin num="19" name="CMD" type="BiDi"/>
+        <pin num="20" name="CLK" type="input"/>
+        <pin num="21" name="SDO" type="BiDi"/>
+        <pin num="22" name="SD1" type="BiDi"/>
+        <pin num="23" name="IO15" type="BiDi"/>
+        <pin num="24" name="IO2" type="BiDi"/>
+        <pin num="25" name="IO0" type="BiDi"/>
+        <pin num="26" name="IO4" type="input"/>
+        <pin num="27" name="IO16" type="BiDi"/>
+        <pin num="28" name="IO17" type="BiDi"/>
+        <pin num="29" name="IO5" type="BiDi"/>
+        <pin num="30" name="IO18" type="input"/>
+        <pin num="31" name="IO19" type="BiDi"/>
+        <pin num="32" name="NC" type="NotConnected"/>
+        <pin num="33" name="IO21" type="BiDi"/>
+        <pin num="34" name="RXD0" type="BiDi"/>
+        <pin num="35" name="TXD0" type="BiDi"/>
+        <pin num="36" name="IO22" type="BiDi"/>
+        <pin num="37" name="IO23" type="BiDi"/>
+        <pin num="38" name="GND" type="power_in"/>
+        <pin num="39" name="GND-PAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="LD1117S33TR">
+      <aliases>
+        <alias>LD1117S33CTR</alias>
+        <alias>LD1117S12TR</alias>
+        <alias>LD1117S12CTR</alias>
+        <alias>LD1117S18TR</alias>
+        <alias>LD1117S18CTR</alias>
+        <alias>LD1117S25TR</alias>
+        <alias>LD1117S25CTR</alias>
+        <alias>LD1117S50TR</alias>
+        <alias>LD1117S50CTR</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT223</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LD1117S33TR</field>
+        <field name="Footprint">SOT-223</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-rescue" part="LED-RESCUE-BleTouchDimmer">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED-RESCUE-BleTouchDimmer</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="opto" part="LTV-814">
+      <description>AC/DC Optocoupler, Vce 35V, CTR 20%, DIP4</description>
+      <docs>http://optoelectronics.liteon.com/upload/download/DS-70-96-0013/S_110_LTV-814%20824%20844%20(M,%20S,%20S-TA,%20S-TA1,%20S-TP)%20Series.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTV-814</field>
+        <field name="Footprint">Housings_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="Led_Small">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Led_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="opto" part="MOC3010M">
+      <aliases>
+        <alias>MOC3011M</alias>
+        <alias>MOC3012M</alias>
+        <alias>MOC3020M</alias>
+        <alias>MOC3021M</alias>
+        <alias>MOC3022M</alias>
+        <alias>MOC3023M</alias>
+        <alias>MOC3051M</alias>
+        <alias>MOC3052M</alias>
+      </aliases>
+      <description>Random Phase Opto-Triac, Vdrm 250V, Ift 15mA, DIP6</description>
+      <docs>http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SMDIP*W9.53mm*</fp>
+        <fp>DIP*W10.16mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOC3010M</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="NC" type="NotConnected"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="RVAR">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RVAR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="SW_PUSH">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transformer" part="TEZ1.5-D-1">
+      <description>TEZ1.5/D/x, 1.5VA, Single Secondary, Cast Resin Transformer, PCB</description>
+      <docs>http://www.breve.pl/pdf/ANG/TEZ_ang.pdf</docs>
+      <footprints>
+        <fp>Transformer*Breve*TEZ*28x33*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TR</field>
+        <field name="Value">TEZ1.5-D-1</field>
+        <field name="Footprint">Transformers_THT:Transformer_Breve_TEZ-28x33</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="TRIAC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TRIAC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="BleTouchDimmer-cache" part="VR">
+      <fields>
+        <field name="Reference">VR</field>
+        <field name="Value">VR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BleTouchDimmer-rescue">
+      <uri>C:\Elektroonika\BleDimmerKiCad\BleTouchDimmer\BleTouchDimmer-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Elektroonika\kicad-library\library\device.lib</uri>
+    </library>
+    <library logical="ESP32-footprints-Shem-Lib">
+      <uri>C:\Elektroonika\ESP32-kiCad-Footprints\ESP32-Footprints\ESP32-footprints-Shem-Lib.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="opto">
+      <uri>C:\Elektroonika\kicad-library\library\opto.lib</uri>
+    </library>
+    <library logical="Transformer">
+      <uri>C:\Elektroonika\kicad-library\library\Transformer.lib</uri>
+    </library>
+    <library logical="BleTouchDimmer-cache">
+      <uri>C:\Elektroonika\BleDimmerKiCad\BleTouchDimmer\BleTouchDimmer-cache.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>C:\Program Files\KiCad\share\kicad\library\transistors.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="R14" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R29" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U6" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="2" name="/RESET">
+      <node ref="Q5" pin="3"/>
+      <node ref="J3" pin="6"/>
+      <node ref="C3" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U6" pin="3"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="C7" pin="2"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U6" pin="15"/>
+      <node ref="J4" pin="6"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="U6" pin="38"/>
+      <node ref="U6" pin="39"/>
+      <node ref="C3" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J3" pin="7"/>
+      <node ref="J5" pin="5"/>
+      <node ref="J6" pin="5"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="4" name="/DEBUG_LED">
+      <node ref="U6" pin="4"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="5" name="/TX">
+      <node ref="U6" pin="35"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="6" name="/RX">
+      <node ref="R3" pin="1"/>
+      <node ref="U6" pin="34"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="7" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="8" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="9" name="Net-(J3-Pad4)">
+      <node ref="R25" pin="2"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="10" name="Net-(J3-Pad5)">
+      <node ref="J3" pin="5"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="11" name="/TOUCH3/MTDO">
+      <node ref="J6" pin="4"/>
+      <node ref="R26" pin="1"/>
+      <node ref="U6" pin="23"/>
+    </net>
+    <net code="12" name="/TOUCH4/MTCK">
+      <node ref="J6" pin="3"/>
+      <node ref="U6" pin="16"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="13" name="/TOUCH5/MTDI">
+      <node ref="R24" pin="1"/>
+      <node ref="U6" pin="14"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="14" name="/TOUCH6/MTMS">
+      <node ref="J6" pin="1"/>
+      <node ref="U6" pin="13"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="15" name="Net-(U6-Pad29)">
+      <node ref="U6" pin="29"/>
+    </net>
+    <net code="16" name="Net-(U6-Pad19)">
+      <node ref="U6" pin="19"/>
+    </net>
+    <net code="17" name="Net-(U6-Pad28)">
+      <node ref="U6" pin="28"/>
+    </net>
+    <net code="18" name="Net-(U6-Pad18)">
+      <node ref="U6" pin="18"/>
+    </net>
+    <net code="19" name="/BOOT">
+      <node ref="U6" pin="25"/>
+      <node ref="Q6" pin="3"/>
+    </net>
+    <net code="20" name="Net-(Q6-Pad1)">
+      <node ref="R28" pin="1"/>
+      <node ref="Q6" pin="1"/>
+    </net>
+    <net code="21" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1"/>
+      <node ref="R27" pin="1"/>
+    </net>
+    <net code="22" name="/TOUCH0">
+      <node ref="U6" pin="26"/>
+      <node ref="J5" pin="4"/>
+    </net>
+    <net code="23" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="24" name="Net-(J2-Pad2)">
+      <node ref="Q4" pin="3"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="25" name="/TOUCH8">
+      <node ref="U6" pin="9"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="26" name="/TOUCH7">
+      <node ref="U6" pin="12"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="27" name="/TOUCH2">
+      <node ref="J5" pin="3"/>
+      <node ref="U6" pin="24"/>
+    </net>
+    <net code="28" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="30" name="/LED1">
+      <node ref="Q3" pin="1"/>
+      <node ref="U6" pin="10"/>
+    </net>
+    <net code="31" name="/TR1_CTRL">
+      <node ref="U6" pin="7"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="32" name="/ZC_DETECT">
+      <node ref="C2" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="33" name="/LED2">
+      <node ref="Q4" pin="1"/>
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="34" name="/230_VAC_L">
+      <node ref="R9" pin="1"/>
+      <node ref="VR1" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="TR1" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="TR2" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="TR3" pin="1"/>
+    </net>
+    <net code="35" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="36" name="/N">
+      <node ref="VR1" pin="2"/>
+      <node ref="P3" pin="4"/>
+      <node ref="TR3" pin="5"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="37" name="Net-(U6-Pad27)">
+      <node ref="U6" pin="27"/>
+    </net>
+    <net code="38" name="Net-(U6-Pad30)">
+      <node ref="U6" pin="30"/>
+    </net>
+    <net code="39" name="Net-(U6-Pad31)">
+      <node ref="U6" pin="31"/>
+    </net>
+    <net code="40" name="Net-(U6-Pad32)">
+      <node ref="U6" pin="32"/>
+    </net>
+    <net code="41" name="Net-(U6-Pad33)">
+      <node ref="U6" pin="33"/>
+    </net>
+    <net code="42" name="Net-(U6-Pad36)">
+      <node ref="U6" pin="36"/>
+    </net>
+    <net code="43" name="Net-(U6-Pad37)">
+      <node ref="U6" pin="37"/>
+    </net>
+    <net code="44" name="/L_IN">
+      <node ref="P3" pin="3"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="45" name="/TR1_L_OUT">
+      <node ref="TR1" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="46" name="/TR2_L_OUT">
+      <node ref="R20" pin="2"/>
+      <node ref="TR2" pin="1"/>
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="47" name="Net-(U6-Pad5)">
+      <node ref="U6" pin="5"/>
+    </net>
+    <net code="48" name="/DTR">
+      <node ref="R27" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="49" name="/RTS">
+      <node ref="J4" pin="4"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="50" name="/TR2_CTRL">
+      <node ref="Q2" pin="1"/>
+      <node ref="U6" pin="8"/>
+    </net>
+    <net code="51" name="Net-(U6-Pad17)">
+      <node ref="U6" pin="17"/>
+    </net>
+    <net code="52" name="Net-(U6-Pad21)">
+      <node ref="U6" pin="21"/>
+    </net>
+    <net code="53" name="Net-(U6-Pad22)">
+      <node ref="U6" pin="22"/>
+    </net>
+    <net code="54" name="Net-(U6-Pad20)">
+      <node ref="U6" pin="20"/>
+    </net>
+    <net code="55" name="Net-(D2-Pad2)">
+      <node ref="R5" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="56" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="57" name="Net-(R7-Pad2)">
+      <node ref="U1" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="58" name="Net-(R10-Pad2)">
+      <node ref="R8" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="59" name="Net-(R8-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="60" name="Net-(D4-Pad1)">
+      <node ref="U4" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="61" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="62" name="Net-(R18-Pad1)">
+      <node ref="R18" pin="1"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="63" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="64" name="Net-(R17-Pad1)">
+      <node ref="R17" pin="1"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="65" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="66" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="67" name="Net-(R18-Pad2)">
+      <node ref="R20" pin="1"/>
+      <node ref="R18" pin="2"/>
+      <node ref="TR2" pin="3"/>
+    </net>
+    <net code="68" name="Net-(D3-Pad1)">
+      <node ref="U3" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="69" name="Net-(R12-Pad2)">
+      <node ref="U3" pin="1"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="70" name="Net-(R15-Pad1)">
+      <node ref="U3" pin="6"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="71" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="72" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="73" name="Net-(D3-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="74" name="Net-(R16-Pad1)">
+      <node ref="R16" pin="1"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="75" name="Net-(R16-Pad2)">
+      <node ref="R19" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="TR1" pin="3"/>
+    </net>
+    <net code="76" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="77" name="Net-(D5-Pad4)">
+      <node ref="TR3" pin="7"/>
+      <node ref="D5" pin="4"/>
+    </net>
+    <net code="78" name="Net-(D5-Pad3)">
+      <node ref="D5" pin="3"/>
+      <node ref="TR3" pin="9"/>
+    </net>
+    <net code="79" name="Net-(C5-Pad1)">
+      <node ref="U5" pin="3"/>
+      <node ref="C6" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+  </nets>
+</export>
